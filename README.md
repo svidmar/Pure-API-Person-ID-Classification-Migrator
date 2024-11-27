@@ -2,7 +2,7 @@
 
 This Python script automates the process of:
 1. Fetching data from the Pure API using GET requests for a list of UUIDs.
-2. Modifying the Person ID classification in the response based on conditions.
+2. Modifying the Person ID classification in the response based on conditions. Useful for migrating a subset of ID values from one Person ID classification to another.
 3. Sending the modified payload back to the Pure API using PUT requests.
 
 ## Features
@@ -24,7 +24,7 @@ pip install requests pandas openpyxl
 
 ## How to Use
 1. Prepare an Excel file with the following columns:
-   - `UUID`: The unique identifier for the person.
+   - `UUID`: The UUID of the Person in Pure.
    - `Medarbejder id`: The identifier to match in the API response.
 
 2. Update the script configuration:
